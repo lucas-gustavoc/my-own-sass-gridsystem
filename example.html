@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SASS GridSystem Example</title>
+
+        <link rel="stylesheet" type="text/css" href="grid.min.css">
+
+        <style>
+            /* Dispensável. Apenas para testes. */
+
+            [class*="col-"]:nth-child(odd) {
+                background-color: linen;
+                border: 1px solid grey;
+            }
+
+            [class*="col-"]:nth-child(even) {
+                background-color: lightgreen;
+                border: 1px solid grey;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+                <h2>I'm the HEADER. I don't hide ever.</h2>
+            </div>
+        </div>
+        <div class="row hide show-lg show-md">
+            <div class="col-12 col-lg-6 col-md-6">
+                <p>I hide in Mobile...</p>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6">
+                <p>I hide in Mobile...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-3">
+                <p>[ I'm something like a Menu ]</p>
+            </div>
+            <div class="col-12 col-lg-9 col-md-9">
+                <h3>I'm the only content here, so: </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Egestas diam in arcu cursus euismod quis viverra nibh cras. Consequat mauris nunc congue nisi vitae suscipit tellus. Platea dictumst quisque sagittis purus. Nam aliquam sem et tortor consequat. Ullamcorper dignissim cras tincidunt lobortis feugiat. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Molestie nunc non blandit massa enim nec dui nunc. Cras ornare arcu dui vivamus arcu. Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>I don't need to mention what I am, right?</h2>
+            </div>
+        </div>
+    </body>
+</html>

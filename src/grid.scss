@@ -1,0 +1,75 @@
+@mixin grid($class-sufix: '-') {
+    .col#{$class-sufix}1 {width: 8.33%;}
+    .col#{$class-sufix}2 {width: 16.66%;}
+    .col#{$class-sufix}3 {width: 25%;}
+    .col#{$class-sufix}4 {width: 33.33%;}
+    .col#{$class-sufix}5 {width: 41.66%;}
+    .col#{$class-sufix}6 {width: 50%;}
+    .col#{$class-sufix}7 {width: 58.33%;}
+    .col#{$class-sufix}8 {width: 66.66%;}
+    .col#{$class-sufix}9 {width: 75%;}
+    .col#{$class-sufix}10 {width: 83.33%;}
+    .col#{$class-sufix}11 {width: 91.66%;}
+    .col#{$class-sufix}12 {width: 100%;}
+}
+
+@mixin offset($class-sufix: '-') {
+    .offset#{$class-sufix}1 {left: 8.33%;}
+    .offset#{$class-sufix}2 {left: 16.66%;}
+    .offset#{$class-sufix}3 {left: 25%;}
+    .offset#{$class-sufix}4 {left: 33.33%;}
+    .offset#{$class-sufix}5 {left: 41.66%;}
+    .offset#{$class-sufix}6 {left: 50%;}
+    .offset#{$class-sufix}7 {left: 58.33%;}
+    .offset#{$class-sufix}8 {left: 66.66%;}
+    .offset#{$class-sufix}9 {left: 75%;}
+    .offset#{$class-sufix}10 {left: 83.33%;}
+    .offset#{$class-sufix}11 {left: 91.66%;}
+    .offset#{$class-sufix}12 {left: 100%;}
+}
+
+@mixin hide($class-sufix: '') {
+    .hide#{$class-sufix} { display: none; }
+}
+
+@mixin show($class-sufix: '') {
+    .show#{$class-sufix} { display: initial; }
+}
+
+/* Small devices (phones, 768px and down) */
+@include grid();
+@include offset();
+@include hide();
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    @include grid('-md-');
+    @include offset('-md-');
+    @include hide('-md');
+    @include show('-md');
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    @include grid('-lg-');
+    @include offset('-lg-');
+    @include hide('-lg');
+    @include show('-lg');
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    position: relative;
+}
+
+[class*="col-"],.row {
+    box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "sass-gridsystem",
+  "version": "1.0.0",
+  "description": "SASS GridSystem can be used to layout any web/mobile application.",
+  "main": "index.js",
+  "author": {"name": "Lucas Gustavo"},
+  "license": "MIT",
+  "scripts": {
+    "build": "sass src/grid.scss grid.css --no-source-map",
+    "build-compressed": "sass src/grid.scss grid.min.css --style=compressed --no-source-map"
+  },
+  "dependencies": {
+    "sass": "^1.26.2"
+  }
+}
