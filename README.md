@@ -184,9 +184,9 @@ The table below contain the definition of display sizes for each kind of screen 
 
 | # | min-width | max-width |
 |--|--|--|
-|Mobile|N/A|768px|
-|Desktop|768px|1200px|
-|Large Desktop|1200px|N/A|
+|**Mobile**|N/A|768px|
+|**Desktop**|768px|1200px|
+|**Large Desktop**|1200px|N/A|
 
 ## Reference
 
