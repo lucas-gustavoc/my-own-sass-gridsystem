@@ -1,8 +1,8 @@
 # Simple SASS GridSystem
 
-Are you tired of using heavy CSS frameworks just to use their gridsystem? This time is over! Meet Simple SASS GridSystem (SSG, to be more concise).
+Are you tired of using heavy CSS frameworks just to use their gridsystem? This time is over! Meet **Simple SASS GridSystem** (SSG, to be more concise).
 
-SSG is a simple and efficient gridsystem containing precisely the tools you need to design responsive layouts. No more. Just what you really need. That's our main glory !!!
+SSG is a simple and efficient gridsystem containing precisely the tools you need to design responsive layouts. No more. Just what you really need. That's our great glory!
 
 ## Installation
 
@@ -86,7 +86,7 @@ It turns out that SSG was built over the Mobile-First perspective, which means t
 
 ## Mobile-First
 
-The SSG was built over the Mobile-First perspective. Basically, it means every statement will be first directed to mobile screens.
+The SSG was built over the **Mobile-First** perspective. Basically, it means every statement will be first directed to mobile screens.
 
 So the idea is that you can finally build your application with mobile in the top of your mind! But you might be wondering: why is mobile-first interesting?
 
@@ -178,6 +178,16 @@ But, let's say now you have a sidebar you want to SHOW just on desktops, hiding 
 
 Note once we think mobile-first, the class `.hide` will hide on mobile and every other screen, unless we explicitly tell the code we want to show on desktops (`.show-md`).
 
+## Display Sizes
+
+The table below contain the definition of display sizes for each kind of screen used in SSG:
+
+| # | min-width | max-width |
+|--|--|--|
+|Mobile|N/A|768px|
+|Desktop|768px|1200px|
+|Large Desktop|1200px|N/A|
+
 ## Reference
 
 Classes for Mobile or Generic Layout:
@@ -201,6 +211,14 @@ You can also design a specific layout to large desktops using these classes:
 - `.show-lg`
 
 You're not required to design separately for large desktops. If you don't, the `*-md-*` properties will apply to them.
+
+## Collaborate
+
+You're welcome to collaborate with this project and make it even better. You don't need to change the `.css` files, but only the `src/grid.scss` file.
+
+After editting it, you can compile and distribute it to the World!
+
+> You'll need a SASS compilator to edit the project. The official site [SASS Lang](https://sass-lang.com/) can provide you with more information.
 
 ## License
 
