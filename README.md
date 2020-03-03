@@ -12,6 +12,12 @@ You can install SSG by NPM:
 npm install simple-sass-gridsystem
 ```
 
+Or use Yarn:
+
+```bash
+yarn add simple-sass-gridsystem
+```
+
 Then you can import it:
 
 ```javascript

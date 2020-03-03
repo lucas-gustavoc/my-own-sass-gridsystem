@@ -1,0 +1,26 @@
+{
+  "name": "simple-sass-gridsystem",
+  "version": "1.0.4",
+  "description": "Simple and efficient SASS GridSystem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-gustavoc/my-own-sass-gridsystem.git"
+  },
+  "keywords": [
+    "sass",
+    "gridsystem",
+    "bootstrap",
+    "responsive-design",
+    "mobile-layout"
+  ],
+  "author": "Lucas Gustavo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem/issues"
+  },
+  "homepage": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem#readme"
+}
