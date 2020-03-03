@@ -1,6 +1,6 @@
 # Simple SASS GridSystem
 
-Are you just tired of usgin heavy CSS frameworks just to use their gridsystem? This time is over! Meet Simple SASS GridSystem (SSG, to be more concise).
+Are you tired of using heavy CSS frameworks just to use their gridsystem? This time is over! Meet Simple SASS GridSystem (SSG, to be more concise).
 
 SSG is a simple and efficient gridsystem containing precisely the tools you need to design responsive layouts. No more. Just what you really need. That's our main glory !!!
 
@@ -28,7 +28,7 @@ Here is an example of use:
 <!-- YOUR HEADER -->
 <div class="row">
     <div class="col-12">
-        <h1>I'm the HEADER. I don't hide ever.</h1>
+        <h1>I'm the HEADER.</h1>
     </div>
 </div>
 
@@ -52,14 +52,14 @@ Here is an example of use:
 <!-- YOUR FOOTER -->
 <div class="row">
     <div class="col-12">
-        <h1>I'm the HEADER. I don't hide ever.</h1>
+        <h1>I'm the FOOTER.</h1>
     </div>
 </div>
 ```
 
 The code above gives you a simple layout with header, footer, sidebar and content container.
 
-Just create a div with the .row class and another inside with `.col-*` class. As usual, the max-number of columns is 12.
+Just create a div with the `.row` class and another inside with `.col-*` class. As usual, the max-number of columns is 12.
 
 Let's say you want to suit the sidebar in 12 columns instead of 4 when accessing through a mobile screen. Simple:
 
@@ -103,7 +103,7 @@ Enough of theory, let's see some code:
 
 In the example above, we have an image with its description below. Once we're thinking mobile-first, this will render perfectly on mobile screens. But it won't fit well on desktops, cause we will have a big 100%-sized image wich might not be what we're looking for.
 
-So we add the some desktop support now:
+So we add some desktop support now:
 
 ```html
 <div class="row">
@@ -118,7 +118,7 @@ So we add the some desktop support now:
 
 Great! Now we have the image rendered 100%-sized on mobile, but put aside on desktops with the description on its right.
 
-Just follow this same dynamic and your layout will just be amazing!
+Just follow this same dynamic and your layout will be amazing!
 
 It's relevant to understand that `.col-*` classes work fine for desktops, but we recommend you to use them just for mobile, letting `.col-md-*` for desktops.
 
@@ -132,7 +132,7 @@ You can also use offsets to make your elements leap some columns:
 </div>
 ```
 
-This div container will be put at the center of the screen, skipping 4 columns, filling 8 and having 4 mode ahead.
+This `div` container will be put at the center of the screen, skipping 4 columns, filling 8 and having 4 more ahead.
 
 The mobile-first logic also applies here, we recommend using `.offset-*` for the mobile layout and `.offset-md-*` for desktops. So, in the example above, if you just want to skip columns on desktops and not on mobile, go with:
 
@@ -194,7 +194,7 @@ You can also design a specific layout to large desktops using these classes:
 - `.hide-lg`
 - `.show-lg`
 
-You're not required to designed separately for large desktops. If you don't, the `\*-md-\*` properties will apply to them.
+You're not required to design separately for large desktops. If you don't, the `*-md-*` properties will apply to them.
 
 ## License
 

@@ -1,7 +1,7 @@
 {
   "name": "simple-sass-gridsystem",
-  "version": "1.0.0",
-  "description": "SASS GridSystem can be used to layout any web/mobile application.",
+  "version": "1.0.1",
+  "description": "SASS GridSystem wich can be used to layout any web/mobile application.",
   "main": "index.js",
   "author": "Lucas Gustavo",
   "license": "MIT",
