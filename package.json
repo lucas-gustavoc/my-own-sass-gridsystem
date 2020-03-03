@@ -1,9 +1,9 @@
 {
-  "name": "sass-gridsystem",
+  "name": "simple-sass-gridsystem",
   "version": "1.0.0",
   "description": "SASS GridSystem can be used to layout any web/mobile application.",
   "main": "index.js",
-  "author": {"name": "Lucas Gustavo"},
+  "author": "Lucas Gustavo",
   "license": "MIT",
   "scripts": {
     "build": "sass src/grid.scss grid.css --no-source-map",
@@ -11,5 +11,17 @@
   },
   "dependencies": {
     "sass": "^1.26.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-gustavoc/my-own-sass-gridsystem.git"
+  },
+  "keywords": [
+    "SassGridSystem"
+  ],
+  "bugs": {
+    "url": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem/issues"
+  },
+  "homepage": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem#readme"
 }
