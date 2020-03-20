@@ -206,9 +206,9 @@ You have also another option about padding: remove padding just from nested rows
 
 To accomplish that, just add the class `.no-nested-padding` to your row instead of `.no-padding`.
 
-We know what you are thinking now: Whow, what if I want to remove padding from all rows, will I need to put these boring `.no-padding` no every row? The answer is NO!
+We know what you are thinking now: Wow, what if I want to remove padding from all rows, will I need to put these boring `.no-padding` to every one? The answer is NO!
 
-To set a global configuration about padding, just put your entire body's html inside a div with the classes `.ssg-global-settings` (remember: SSG stands for Simple-Sass-Gridsystem) and `.no-padding`. You will get something like that:
+To set a global configuration about padding, just put your entire body's html code inside a div with the classes `.ssg-global-settings` (remember: SSG stands for Simple-Sass-Gridsystem) and `.no-padding`. You will get something like that:
 
 ```html
 <html>
@@ -217,7 +217,7 @@ To set a global configuration about padding, just put your entire body's html in
     </head>
     <body>
         <div class="ssg-global-settings no-padding">
-            <!-- Your entire html goes here -->
+            <!-- Your entire body's html code goes here -->
         </div>
     </body>
 </html>
@@ -234,7 +234,7 @@ You can also do the same with `.no-nested-padding`, like this:
     </head>
     <body>
         <div class="ssg-global-settings no-nested-padding">
-            <!-- Your entire html goes here -->
+            <!-- Your entire body's html code goes here -->
         </div>
     </body>
 </html>
@@ -275,6 +275,15 @@ You can also design a specific layout to large desktops using these classes:
 - `.show-lg`
 
 You're not required to design separately for large desktops. If you don't, the `*-md-*` properties will apply to them.
+
+Classes for manipulating padding (applied on rows individually):
+
+- `.no-padding`: No padding at all on that row.
+- `.no-nested-padding`: Just the root columns will have the default padding.
+
+Declaring global settings:
+
+- `.ssg-global-settings`: The element with this class should wrap your entire body's html code.
 
 ## Collaborate
 

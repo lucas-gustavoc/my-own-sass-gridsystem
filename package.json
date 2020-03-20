@@ -1,6 +1,6 @@
 {
   "name": "simple-sass-gridsystem",
-  "version": "1.0.5",
+  "version": "1.1.1",
   "description": "Simple and efficient SASS GridSystem.",
   "main": "index.js",
   "scripts": {
