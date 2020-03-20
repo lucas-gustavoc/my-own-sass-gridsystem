@@ -178,6 +178,70 @@ But, let's say now you have a sidebar you want to SHOW just on desktops, hiding 
 
 Note once we think mobile-first, the class `.hide` will hide on mobile and every other screen, unless we explicitly tell the code we want to show on desktops (`.show-md`).
 
+## Padding
+
+By default, every single element with `.col-*` class will have a padding of 15px. Course, as always, we're flexible about it!
+
+If you want to take control of the paddings your `.col-*` will have, you can add the class `.no-padding` to the row on which you want to change this setting. Like this:
+
+```html
+<div class="row no-padding">
+    <div class="col-4"> ... </div>
+    <div class="col-4"> ... </div>
+    <div class="col-4"> ... </div>
+</div>
+```
+
+These `.col-4` elements won't present any padding till you apply it directly. You could do something like:
+
+```css
+.col-4 {
+    padding: 10px;
+}
+```
+
+But remember: it's important to add this style after declaring the SSG in your HTML document. Otherwise it won't work well.
+
+You have also another option about padding: remove padding just from nested rows. By doing this, your root rows will present the default padding on every column (15px), however nested rows won't.
+
+To accomplish that, just add the class `.no-nested-padding` to your row instead of `.no-padding`.
+
+We know what you are thinking now: Whow, what if I want to remove padding from all rows, will I need to put these boring `.no-padding` no every row? The answer is NO!
+
+To set a global configuration about padding, just put your entire body's html inside a div with the classes `.ssg-global-settings` (remember: SSG stands for Simple-Sass-Gridsystem) and `.no-padding`. You will get something like that:
+
+```html
+<html>
+    <head>
+        ...
+    </head>
+    <body>
+        <div class="ssg-global-settings no-padding">
+            <!-- Your entire html goes here -->
+        </div>
+    </body>
+</html>
+```
+
+By doing this, every single row you declare will have the `.no-padding` configuration, without needing you to add this class on each one.
+
+You can also do the same with `.no-nested-padding`, like this:
+
+```html
+<html>
+    <head>
+        ...
+    </head>
+    <body>
+        <div class="ssg-global-settings no-nested-padding">
+            <!-- Your entire html goes here -->
+        </div>
+    </body>
+</html>
+```
+
+In this case, just the root rows will have the default padding.
+
 ## Display Sizes
 
 The table below contain the definition of display sizes for each kind of screen used in SSG:

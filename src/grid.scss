@@ -63,6 +63,22 @@
     position: relative;
 }
 
+.row.no-padding > [class*="col-"] {
+    padding: 0;
+}
+
+.row.no-nested-padding > [class*="col-"] [class*="col-"] {
+    padding: 0;
+}
+
+.ssg-global-settings.no-padding [class*="col-"] {
+    padding: 0;
+}
+
+.ssg-global-settings.no-nested-padding [class*="col-"] [class*="col-"] {
+    padding: 0;
+}
+
 .row::after {
     content: "";
     clear: both;

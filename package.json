@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem/issues"
   },
-  "homepage": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem#readme"
+  "homepage": "https://github.com/lucas-gustavoc/my-own-sass-gridsystem#readme",
+  "dependencies": {}
 }
